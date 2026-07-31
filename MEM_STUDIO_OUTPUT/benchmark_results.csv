@@ -1,0 +1,3 @@
+Validate mode,File size,Model name,RAM size (KiB),Weight size (KiB),MACC,Activation size (KiB),Input size (bytes),Output size (bytes),Duration,Classification accuracy,Root Mean Squared Error,Nash-Sutcliffe efficiency,Mean Absolute Error,Cosine Similarity,L2 relative error
+HOST,25.63 KiB,ispu_model_int8 [X-cross #1],7.5,6.582,227424,7.5,720,5,0.168 ms,100,0.005002441,36.881409,0.001718750,0.999701,0.014314511
+HOST,28.37 KiB,ispu_model_int8 [X-cross #1],6.688,4.301,184440,6.688,720,5,0.129 ms,100,0.007052918,33.822248,0.002109375,0.99939,0.020323228

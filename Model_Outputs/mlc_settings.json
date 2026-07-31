@@ -1,0 +1,20 @@
+{
+    "decision_tree_count": "0",
+    "features": [
+    ],
+    "filters": [
+    ],
+    "input_type": "accelerometer+gyroscope",
+    "json_format": {
+        "type": "mlc_settings",
+        "version": "1.0"
+    },
+    "max_dectrees": 4,
+    "max_results_per_dt": 16,
+    "mlc_odr": "30 Hz",
+    "name": "LSM6DSV16BX",
+    "subgroups_per_dt": 4,
+    "thresh_accu_to_take_default": 0.05,
+    "thresh_n_percentage_default": 0.05,
+    "window_length": "60"
+}

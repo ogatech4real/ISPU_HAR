@@ -1,0 +1,5 @@
+brushing
+chopping
+cleaning
+idle
+pick_drop
