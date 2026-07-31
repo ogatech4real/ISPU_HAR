@@ -254,14 +254,6 @@ A successful build produces the following files in:
 ```text
 ispu/make/bin/
 ```
-
-| File | Purpose |
-|---|---|
-| `ispu` | Compiled ISPU executable |
-| `ispu.srec` | Motorola S-record representation of the executable |
-| `ispu.h` | Generated C register-configuration representation |
-| `ispu.json` | MEMS Studio register-configuration deployment file |
-
 The principal file used for deployment is:
 
 ```text
@@ -357,59 +349,3 @@ The test data follows the same:
 - six-channel ordering;
 - activity-class mapping;
 - preprocessing assumptions used during model development.
-
-## Difference Between Generated Model Code and the Final ISPU Project
-
-The ST Edge AI generated files alone provide only the neural-network implementation:
-
-```text
-network.c
-network_data.c
-```
-
-The complete project additionally provides:
-
-```text
-main.c
-sensor configuration
-preprocessing
-quantisation
-input buffering
-inference control
-output decoding
-interrupt handling
-build system
-linker and startup support
-deployment configuration
-test dataset
-```
-
-Therefore, this folder represents the complete final ISPU application integrating the trained HAR model, rather than only the automatically generated model source code.
-
-## Competition Deliverable
-
-This directory is provided as the final ISPU project integrating the Human Activity Recognition model for evaluation in the IEEE COINS 2026 ST ISPU competition.
-
-The primary evidence of model integration is:
-
-```text
-ispu/src/main.c
-```
-
-The principal build file is:
-
-```text
-ispu/make/Makefile
-```
-
-The principal deployment file is:
-
-```text
-ispu/make/bin/ispu.json
-```
-
-## Author
-
-**Adewale Ogabi**
-
-Human Activity Recognition using TinyML and the ISM330IS Intelligent Sensor Processing Unit.
